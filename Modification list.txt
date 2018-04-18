@@ -1,9 +1,9 @@
 This is a note on the changes made to Anders Stroms code by Johanna Brodin.
 
 The original code can be found on github in the repository 
-http://github.com/abstrom/OPT_PDE_Box_Constraints-master_to_modify 
+http://github.com/abstrom/OPT_PDE_Box_Constraints
 and the modified code in
-http://github.com/johbrodin/OPT_PDE_Box_Constraints-master_to_modify 
+http://github.com/johbrodin/OPT_PDE_Box_Constraints 
 
 In the modified code, changes are marked with "//Added:" and "//Commented:" 
 to show where the code deviates from the original.
