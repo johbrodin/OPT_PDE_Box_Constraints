@@ -1,0 +1,54 @@
+# Listing of Parameters
+# ---------------------
+subsection Equation parameters
+  # Beta
+  set Beta          = 1e-2
+
+  # Type of boundary condition, Dirichlet=0, Neumann=1
+  set Boundary type = 0
+
+  # Epsilon
+  set Epsilon       = 1e-2
+
+  # Number of different beta values
+  set Num beta      = 1
+
+  # Number of different epsilon values
+  set Num epsilon   = 2
+
+  # Parameter sigma used in preconditioner
+  set Sigma         = 1.1
+
+  # Lower constraint on state
+  set Y lower       = -1000
+
+  # Upper constraint on state
+  set Y upper       = 0.1
+end
+
+
+subsection Inner solver
+  # type of inner solver, CG=0,GMRES=1,DIRECT=2,AMG=3
+  set Inner solver type = 0
+end
+
+
+subsection Mesh
+  # first mesh lvl
+  set Mesh lvl 1    = 4
+
+  # fine mesh lvl
+  set Mesh lvl 2    = 0
+
+  # fine mesh lvl
+  set Mesh lvl fine = 8
+end
+
+
+subsection Nonlinear solver
+  # Maximum number of nonlinear iterations allowed
+  set Max newton iterations = 50
+end
+
+
+

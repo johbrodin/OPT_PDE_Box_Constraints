@@ -1,0 +1,80 @@
+# Listing of Parameters
+# ---------------------
+subsection Equation parameters
+  # Beta
+  set Beta          = 1e-6
+
+  # Type of boundary condition, Dirichlet=0, Neumann=1
+  set Boundary type = 0
+
+  # Epsilon
+  set Epsilon       = 1e-5
+
+  # Number of different beta values
+  set Num beta      = 1
+
+  # Number of different epsilon values
+  set Num epsilon   = 4
+
+  # Parameter sigma used in preconditioner
+  set Sigma         = 1.1
+
+  # Lower constraint on state
+  set Y lower       = -1000
+
+  # Upper constraint on state
+  set Y upper       = 0.1
+
+  # desired state, sin(pi*x1*x2)=1, sin(k1*pi*x1-cos(k2*pi*x2))=2
+  set Problem type for desired state = 1
+
+  # factor 1
+  set k1 = 3
+
+  # factor 2
+  set k2 = 3
+
+end
+
+
+subsection Inner solver
+  # type of inner solver, CG=0,GMRES=1,DIRECT=2
+  set Inner solver type = 0
+end
+
+
+subsection Linear solver
+  # type of linear solver, MINRES=0, GMRES=1
+  set Linear solver type = 1
+
+  # linear solver use fixed tolerance, true/false
+  set Linear solver fixed tolerance on = true
+
+  # linear solver fixed tolerance, value
+  set Linear solver fixed tolerance = 1e-6
+
+  # linear solver tolerance reduction used when the number of linear iterations were insufficient (<=2), value
+  set Linear solver fixed tolerance reduction = 0.1
+
+  # linear solver max iterations
+  set Linear solver max it = 500
+end
+
+
+subsection Mesh
+  # Number of initial global refinements
+  set Initial refinements = 4
+
+  # Number of refinement steps
+  set Refinement steps    = 5
+end
+
+
+subsection Nonlinear solver
+  # Maximum number of nonlinear iterations allowed
+  set Max newton iterations = 30
+
+  # save intermediate solution each nonlinear iteration
+  set Save intermediate solution on = false
+end
+
